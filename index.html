@@ -13,6 +13,12 @@
     <!-- fontawesome cdn -->
     <script src="https://kit.fontawesome.com/35d850426d.js" crossorigin="anonymous"></script>
 
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+
     <!-- font color -->
     <script>
         tailwind.config = {
@@ -20,18 +26,103 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'color1': '#179800',
+                        'color2': '#111111',
                     }
                 }
             }
         }
     </script>
 
+    <style>
+        .sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+
 </head>
 
-<body>
+<body class="sora">
 
     <!-- header -->
-    <header></header>
+    <header class=" ">
+
+        <!-- navbar -->
+        <nav class="container mx-auto lg:px-40 mt-8">
+
+                <div class="navbar bg-base-100 ">
+
+                    <div class="navbar-start">
+                        <img class="hidden lg:flex" src="c2-assets/logo-header.png" alt="">
+                        <img class="lg:hidden" src="c2-assets/Group.png" alt="">
+
+                    </div>
+
+                    <div class="navbar-center hidden lg:block">
+                        <ul class="menu menu-horizontal px-1 text-lg font-normal flex">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+
+                        </ul>
+
+                    </div>
+
+
+                    <div class="navbar-end">
+
+                        <div class=" font-normal text-lg  space-x-5 hidden lg:block">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <a class="btn bg-white border-color1 text-color2 px-8 py-0">Login</a>
+                            <a class="btn text-white bg-color1 px-8 py-0">Register</a>
+                        </div>
+
+                        <div class="dropdown dropdown-end lg:hidden">
+
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                                <div class="">
+                                    <i class="fa-solid fa-bars"></i>
+                                </div>
+                            </div>
+                            <ul tabindex="0"
+                                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a>Product</a></li>
+                                <li><a>Services</a></li>
+                                <li><a>Contact us</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="border border-color1 lg:hidden">
+
+                </div>
+        </nav>
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- main section -->
     <main></main>
